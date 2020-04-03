@@ -2,7 +2,7 @@ from .password import Password
 from .validation import validate
 
 
-def generate(length=None, types={}):
+def generate(length=None, types=None):
     """Generate a random password, given a length and types.
 
     Parameters
@@ -10,7 +10,7 @@ def generate(length=None, types={}):
     length: int or None
         the length of password
 
-    types: dict
+    types: dict or None
         the types of characters in the password and their length
 
         allowed keys:
@@ -56,7 +56,8 @@ def generate(length=None, types={}):
     >> generate(types=types)
     'A15UTI4NMPARITNLZFFB7IKX1'
     """
-
+    if types is None:
+        types = {}
     validate(length, types)
     generator = Password(length, types)
     password = generator.generate()

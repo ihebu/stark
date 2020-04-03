@@ -1,5 +1,6 @@
 # Stark
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/07c251e92b634c2895ea9dc2ad77001d)](https://app.codacy.com/manual/Iheb-Haboubi/stark?utm_source=github.com&utm_medium=referral&utm_content=Iheb-Haboubi/stark&utm_campaign=Badge_Grade_Dashboard)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui?color=blue)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 [![PyPi Version](https://img.shields.io/pypi/v/stark.svg)](https://pypi.org/project/stark/)
 [![PyPi Python Versions](https://img.shields.io/badge/python-3.6%7C%203.7%20%7C%203.8-blue)](https://pypi.org/project/stark)

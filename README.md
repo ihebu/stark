@@ -48,7 +48,6 @@ will be the sum of the values of types.
 Thus, it's not allowed to have one value equals True
 while length is None.
 
-
 ### CLI
 
 ```
@@ -122,7 +121,6 @@ N{92D=NB{8FV"D1B\?OI!)BK6$KB3I
 
 ### License
 
-
 MIT License
 
 Copyright (c) 2020 Iheb Haboubi
@@ -144,4 +142,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-

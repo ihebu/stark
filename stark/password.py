@@ -16,8 +16,7 @@ def pick(s, n):
 
 
 def random_partition(keys, p):
-    """
-    Return a dict with keys such that values are a random partition of p.
+    """Return a dict with keys such that values are a random partition of p.
 
     Parameters
     ----------
@@ -86,8 +85,7 @@ class Password:
 
     @property
     def sum(self):
-        """
-        Return the sum each type's length.
+        """Return the sum each type's length.
 
         Example : stark -l 10 -u 5 -d 7 --> self.sum = 10 + 5 + 7 = 22
         """
@@ -102,8 +100,7 @@ class Password:
         return [key for key, value in self.args.items() if not isinstance(value, int)]
 
     def create_map(self):
-        """
-        Create a map for the password.
+        """Create a map for the password.
 
         A map is dict with keys the types of characters and values the corresponding length
         Example : {'lowercase' : 15, 'digits' : 10, 'symbols' : 5}

@@ -18,15 +18,9 @@ hexdigits      0123456789abcdefABCDEF
 symbols        !"#$%&\'()*+,-./:;<=>?@[]^_`{|}~
 ```
 
-## Requirements
-
-```
-python 3.6 or higher
-```
-
 ## Installation
 
-```
+```bash
 pip install stark
 ```
 
@@ -54,20 +48,6 @@ will be the sum of the values of types.
 Thus, it's not allowed to have one value equals True
 while length is None.
 
-#### Examples
-
-```python
-length = 30
-types = {'lowercase':15,'digits':True,'symbols':True}
-
-password = generate(length=length,types=types)
-```
-
-in this example, the number of digits and symbols is not provided so it will be given a random partition such that the sum of the values will be equal to the password length.
-
-the password in this case will contain 15 lowercase and might contain (7 digits and 8 symbols) or (5 digits and 10 symbols) etc...
-
-<br>
 
 ### CLI
 

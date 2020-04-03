@@ -3,8 +3,7 @@ from .validation import validate
 
 
 def generate(length=None, types={}):
-    """
-    Generate a random password, given a length and types.
+    """Generate a random password, given a length and types.
 
     Parameters
     ----------

@@ -5,7 +5,7 @@ def validate_length(length):
     """
     if length is None:
         return True
-    if type(length) != int:
+    if not isinstance(length, int):
         raise TypeError("password length must be of type int")
     if length <= 0:
         raise ValueError("password length must be greater than or equal 1")
@@ -48,7 +48,7 @@ def validate_logic(length, types):
         raise ValueError("password length exceeded")
     # check if password length is not specified
     # and if there is a type with no specified length
-    if not length and any(type(value) == bool for value in types.values()):
+    if not length and any(isinstance(value, bool) for value in types.values()):
         raise TypeError("password length not specified")
     return True
 

@@ -54,7 +54,7 @@ def sumValues(d):
     """Return the sum of int values of a dict d."""
     result = 0
     for value in d.values():
-        if type(value) == int:
+        if isinstance(value, int):
             result += value
     return result
 
@@ -99,7 +99,7 @@ class Password:
 
     @property
     def empty(self):
-        return [key for key, value in self.args.items() if type(value) != int]
+        return [key for key, value in self.args.items() if not isinstance(value, int)]
 
     def create_map(self):
         """

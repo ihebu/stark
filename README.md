@@ -1,7 +1,8 @@
 # Stark
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui?color=blue)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 [![PyPi Version](https://img.shields.io/pypi/v/stark.svg)](https://pypi.org/project/stark/)
+[![PyPi Python Versions](https://img.shields.io/badge/python-3.6%7C%203.7%20%7C%203.8-blue)](https://pypi.org/project/stark)
 
 stark generates random and strong passwords.
 

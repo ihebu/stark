@@ -19,7 +19,7 @@ def validate_types(types):
     keys should be a valid character type
     values should be either True or a positif int
     """
-    if type(types) != dict:
+    if not isinstance(types, dict):
         raise TypeError("types must be of type dict")
     allowed = [
         "lowercase",
@@ -35,7 +35,7 @@ def validate_types(types):
         if key not in allowed:
             raise ValueError("unknown character type : ", key)
     for value in types.values():
-        if type(value) not in [int, bool]:
+        if not (isinstance(value, int) or isinstance(value, bool)):
             raise TypeError("value must be of type int or bool")
         if value == False or value <= 0:
             raise ValueError("invalud value specified")

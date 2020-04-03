@@ -8,15 +8,13 @@ stark generates random and strong passwords.
 
 the password can include the following characters
 
-```
-lowercase      abcdefghijklmnopqrstuvwxyz
-uppercase      ABCDEFGHIJKLMNOPQRSTUVWXYZ
-digits         0123456789
-letters        abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
-alphanumeric   abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
-hexdigits      0123456789abcdefABCDEF
-symbols        !"#$%&\'()*+,-./:;<=>?@[]^_`{|}~
-```
+-  lowercase
+-  uppercase
+-  digits
+-  letters
+-  alphanumeric
+-  hexdigits
+-  symbols
 
 ## Installation
 

@@ -117,8 +117,6 @@ $ stark -ln 30 -x 10 -u -s
 N{92D=NB{8FV"D1B\?OI!)BK6$KB3I
 ```
 
-<br>
-
 ### License
 
 MIT License

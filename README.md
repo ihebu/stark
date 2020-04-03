@@ -6,16 +6,6 @@
 
 stark generates random and strong passwords.
 
-the password can include the following characters
-
-- lowercase
-- uppercase
-- digits
-- letters
-- alphanumeric
-- hexdigits
-- symbols
-
 ## Installation
 
 ```bash

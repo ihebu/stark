@@ -22,8 +22,24 @@ from stark import generate
 
 length = 30
 types = {'lowercase':15,'digits':10,'symbols':True}
-
 password = generate(length=length,types=types)
+# The remaining number of characters is 30 - 15 - 10 = 5
+# Thus, the number of symbols in the password will be remainder = 5
+
+length = 30
+types = {'lowercase':15,'digits':True,'symbols':True}
+password = generate(length=length,types=types)
+# The remaining number of characters is 30 - 15 = 15
+# Thus, the number of digits and symbols in the password will be a random partition of remainder = 15
+# e.g (7,8) or (10,5) or (9,6) etc ...
+# the partition will not contain a value of 0
+# i.e the occurance of each type in the password will be greater than or equal 1
+
+length = None
+types = {'lowercase':15,'uppercase':5,'digits':7}
+password = generate(length=length,types=types)
+# If length is None, the password length will be the sum of the values of types.
+# Thus, it's not allowed to have one value equals True while password length is None.
 ```
 
 #### Notes

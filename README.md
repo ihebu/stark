@@ -1,21 +1,32 @@
 # Stark
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/07c251e92b634c2895ea9dc2ad77001d)](https://app.codacy.com/manual/Iheb-Haboubi/stark?utm_source=github.com&utm_medium=referral&utm_content=Iheb-Haboubi/stark&utm_campaign=Badge_Grade_Dashboard)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui?color=blue)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 [![PyPi Version](https://img.shields.io/pypi/v/stark.svg)](https://pypi.org/project/stark/)
 [![PyPi Python Versions](https://img.shields.io/badge/python-3.6%7C%203.7%20%7C%203.8-blue)](https://pypi.org/project/stark)
 
-stark generates random and strong passwords.
+Stark is a python tool that generates random and strong passwords.
+
+The password can include the following characters
+
+```
+lowercase       abcdefghijklmnopqrstuvwxyz
+uppercase       ABCDEFGHIJKLMNOPQRSTUVWXYZ
+digits          0123456789
+letters         abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+alphanumeric    abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+hexdigits       0123456789abcdefABCDEF
+symbols         !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+```
 
 ## Installation
 
-```bash
+```
 pip install stark
 ```
 
 ## Usage
 
-### API
+### From python
 
 ```python
 from stark import generate
@@ -42,18 +53,7 @@ password = generate(length=length,types=types)
 # Thus, it's not allowed to have one value equals True while password length is None.
 ```
 
-#### Notes
-
-A value of True in types dictionary indicates that the character
-will have a number of one or more (randomly) in the password.
-
-If length is None, the password length
-will be the sum of the values of types.
-
-Thus, it's not allowed to have one value equals True
-while length is None.
-
-### CLI
+### From CLI
 
 ```
 $ stark [options]
@@ -63,8 +63,6 @@ Get help about options
 
 ```
 $ stark --help
-
-usage: stark [options]
 
 stark generates random and strong passwords
 
@@ -79,12 +77,11 @@ optional arguments:
   -x, --hexdigits      include hexadecimal
   -an, --alphanumeric  include alphanumeric
   -lt, --letters       include letters
-
 ```
 
 ### Examples
 
-default password : 25 character alphanumeric
+Default password : 25 character alphanumeric
 
 ```
 $ stark
@@ -122,10 +119,33 @@ $ stark -ln 30 -x 10 -u -s
 N{92D=NB{8FV"D1B\?OI!)BK6$KB3I
 ```
 
-### License
+## Testing
 
-MIT License
+```
+$ pip install pytest
 
+$ pytest
+```
+
+## Contributing
+
+Anyone is welcome and encouraged to contribute, especially the beginners as this is a beginner friendly project.
+
+Contributing can include, but is not limited to :
+
+-  Adding / Improving documentation
+-  Adding / Improving tests
+-  Reporting bugs and errors
+-  Adding new feautures and code
+-  Sharing this project with anyone who might be interested
+
+For any information feel free to contact me through email : iheb.haboubi56@gmail.com
+
+## License
+
+Stark is released under the MIT license
+
+```
 Copyright (c) 2020 Iheb Haboubi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -145,3 +165,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```

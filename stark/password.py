@@ -106,7 +106,7 @@ class Password:
             self.args = {self.default_type: self.default_length}
         else:
             if self.empty == []:
-                self.args[self.default_type] = self.rest
+                self.args[self.default_type] = self.args.get(self.default_type,0) + self.rest
             else:
                 partition = random_partition(self.empty, self.rest)
                 # Merge the partition with self.args

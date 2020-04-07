@@ -1,3 +1,6 @@
+from .constants import TYPES
+
+
 def validate_length(length):
     """Check of if password length is valid.
 
@@ -21,17 +24,8 @@ def validate_types(types):
     """
     if type(types) != dict:
         raise TypeError("types must be of type dict")
-    allowed = [
-        "lowercase",
-        "uppercase",
-        "digits",
-        "symbols",
-        "letters",
-        "alphanumeric",
-        "hexdigits",
-        "any",
-    ]
-    for key in types.keys():
+    allowed = TYPES.keys()
+    for key in types:
         if key not in allowed:
             raise ValueError("unknown character type : ", key)
     for value in types.values():

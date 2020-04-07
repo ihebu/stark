@@ -2,6 +2,9 @@ import random
 import secrets
 import string
 
+from .constants import DEFAULT_LENGTH, DEFAULT_TYPE
+from .constants import TYPES
+
 
 def shuffle(s):
     """Return a randomly shuffled version of string s."""
@@ -65,18 +68,9 @@ class Password:
         # It will have the value of self.sum
         self.length = length or self.sum
         # Default password settings
-        self.default_type = "alphanumeric"
-        self.default_length = self.length or 25
-        self.type = {
-            "lowercase": string.ascii_lowercase,
-            "uppercase": string.ascii_uppercase,
-            "digits": string.digits,
-            "symbols": string.punctuation,
-            "letters": string.ascii_letters,
-            "alphanumeric": string.ascii_letters + string.digits,
-            "hexdigits": string.hexdigits,
-            "any": string.ascii_letters + string.digits + string.punctuation,
-        }
+        self.default_type = DEFAULT_TYPE
+        self.default_length = self.length or DEFAULT_LENGTH
+        self.type = TYPES
 
     @property
     def is_default(self):

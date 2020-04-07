@@ -63,7 +63,7 @@ def sumValues(d):
 
 class Password:
     def __init__(self, length, args):
-        self.args = args
+        self.args = dict(args)
         # If the password length is not privded
         # It will have the value of self.sum
         self.length = length or self.sum

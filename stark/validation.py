@@ -5,7 +5,7 @@ def validate_length(length):
     """
     if length is None:
         return True
-    if not isinstance(length, int):
+    if type(length) != int:
         raise TypeError("password length must be of type int")
     if length <= 0:
         raise ValueError("password length must be greater than or equal 1")
@@ -19,7 +19,7 @@ def validate_types(types):
     keys should be a valid character type
     values should be either True or a positif int
     """
-    if not isinstance(types, dict):
+    if type(types) != dict:
         raise TypeError("types must be of type dict")
     allowed = [
         "lowercase",
@@ -35,7 +35,7 @@ def validate_types(types):
         if key not in allowed:
             raise ValueError("unknown character type : ", key)
     for value in types.values():
-        if not (isinstance(value, int) or isinstance(value, bool)):
+        if type(value) not in (int, bool):
             raise TypeError("value must be of type int or bool")
         if value == False or value <= 0:
             raise ValueError("invalud value specified")
@@ -48,7 +48,7 @@ def validate_logic(length, types):
         raise ValueError("password length exceeded")
     # check if password length is not specified
     # and if there is a type with no specified length
-    if not length and any(isinstance(value, bool) for value in types.values()):
+    if not length and any(type(value) == bool for value in types.values()):
         raise TypeError("password length not specified")
     return True
 

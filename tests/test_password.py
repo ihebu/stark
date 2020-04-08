@@ -1,10 +1,7 @@
-import string
-
 import pytest
 
+from stark.constants import DEFAULT_LENGTH, DEFAULT_TYPE, TYPES
 from stark.password import Password
-from stark.constants import DEFAULT_LENGTH, DEFAULT_TYPE
-from stark.constants import TYPES
 
 
 @pytest.mark.parametrize(

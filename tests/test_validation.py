@@ -1,5 +1,6 @@
 import pytest
-from stark.validation import validate_length, validate_types, validate_logic
+
+from stark.validation import validate_length, validate_logic, validate_types
 
 
 def test_validate_length():

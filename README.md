@@ -1,8 +1,8 @@
 # Stark
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui?color=blue)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![MIT License](https://img.shields.io/github/license/iheb-haboubi/stark?color=blue)](https://github.com/Iheb-Haboubi/stark/blob/master/LICENSE)
 [![PyPi Version](https://img.shields.io/pypi/v/stark.svg)](https://pypi.org/project/stark/)
-[![PyPi Python Versions](https://img.shields.io/badge/python-3.6%7C%203.7%20%7C%203.8-blue)](https://pypi.org/project/stark)
+[![PyPi Python Versions](https://img.shields.io/pypi/pyversions/stark)](https://pypi.org/project/stark)
 
 Stark is a python tool that generates random and strong passwords.
 
@@ -133,11 +133,11 @@ Anyone is welcome and encouraged to contribute, especially the beginners as this
 
 Contributing can include, but is not limited to :
 
--  Adding / Improving documentation
--  Adding / Improving tests
--  Reporting bugs and errors
--  Adding new feautures and code
--  Sharing this project with anyone who might be interested
+- Adding / Improving documentation
+- Adding / Improving tests
+- Reporting bugs and errors
+- Adding new feautures and code
+- Sharing this project with anyone who might be interested
 
 For any information feel free to contact me through email : iheb.haboubi56@gmail.com
 

@@ -51,12 +51,12 @@ def test_is_default(length, args, expected):
     "length, args, expected",
     [
         (10, {}, 10),
-        (None, {}, DEFAULT_LENGTH),
-        (None, {"uppercase": 7}, DEFAULT_LENGTH - 7),
+        (None, {}, 0),
+        (None, {"uppercase": 7}, 0),
     ],
 )
 def test_rest(length, args, expected):
-    Password(length, args).rest == expected
+    assert Password(length, args).rest == expected
 
 
 @pytest.mark.parametrize(

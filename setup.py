@@ -21,4 +21,10 @@ setup(
     license="MIT",
     keywords=["password", "random", "generator"],
     python_requires=">=3.6",
+    classifiers=[
+        "Programming Language :: Python :: 3.6"
+        "Programming Language :: Python :: 3.7"
+        "Programming Language :: Python :: 3.8"
+        "Operating System :: OS Independent",
+    ],
 )

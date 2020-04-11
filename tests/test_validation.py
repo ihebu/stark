@@ -26,8 +26,6 @@ def test_validate_length_exceptions(length,expected):
     with pytest.raises(expected):
         validate_length(length)
     
-
-
 @pytest.mark.parametrize(
     'types, expected',
     [

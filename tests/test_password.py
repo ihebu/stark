@@ -17,7 +17,13 @@ def test_length(length, args, expected):
     assert Password(length, args).length == expected
 
 
-@pytest.mark.parametrize("length, args, expected", [(10, {}, 10), (None, {}, 25)])
+@pytest.mark.parametrize(
+    "length, args, expected",
+    [
+        (10, {}, 10),
+        (None, {}, 25)
+    ]
+)
 def test_default_length(length, args, expected):
     assert Password(length, args).default_length == expected
 
@@ -98,7 +104,10 @@ def test_create_map(length, args, expected):
 def test_create_map_partition():
     password = Password(30, {"lowercase": 15, "uppercase": True, "hexdigits": True})
     password.create_map()
+    #make sure password.map doesnt contain default_type key
     with pytest.raises(KeyError):
         password.map[password.type[password.default_type]]
+    #make sure the password length is correct
     assert sum(password.map.values()) == 30
+    #make sure the given lengths remain the same
     assert password.map[password.type["lowercase"]] == 15

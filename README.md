@@ -138,6 +138,3 @@ Contributing can include, but is not limited to :
 - Reporting bugs and errors
 - Adding new feautures and code
 - Sharing this project with anyone who might be interested
-
-For any information feel free to contact me through email : iheb.haboubi56@gmail.com
-
